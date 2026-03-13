@@ -1,191 +1,985 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="shortcut icon" type="image/png" href="https://logoforbrowser.png">
   <meta charset="utf-8">
 
-  <title>Biomechatronics and Intelligent Robotics</title>
+  <title>MIMC医学智能与机器认知实验室</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <link rel="stylesheet" href="css/styles.css">
-  <style>
-    .w3cschool{text-align:center} 
-  </style>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
+<style>
+  table {
+    width: 60%;
+    /*height: 300px;*/
+    text-align: center;
+    /*table-layout: fixed;*/
+    /*font-size: 100px;*/
+  }
+</style>
 
 <body>
-	
-<header>
-  <div class="view1">
-	<a href="index.html">
-		<img id="logo" src="img/Logo_Simple.png" alt="">  
-	</a>
-		<div id="labname">          
-      Biomechatronics and Intelligent Robotics Lab        
-		</div> 
-    
-  </div>
-</header>
 
-<div id="nav-placeholder">
-  
-</div>
-<script>
-  $(function(){
-    $("#nav-placeholder").load("navbar.html");
-  });
-  </script>
-<!-- <nav>
-	<div class="navitems">
-          <span><a href="index.html" >Home</a></span> 
-          <span><a href="research.html"><b>Research</b></a></span> 
-          <span><a href="people.html">People</a></span> 
-          <span><a href="publications.html">Publications</a></span> 
-          <span><a href="news.html">News</a></span>
-          <span><a href="joining.html">Opportunity</a></span>
-          <span><a href="https://assistiverobotcenter.github.io">Assistive Robot Center</a></span>
-          <div class="dropdown">
-            <a href="#" class="dropbtn">Workshop</a>
-            <div class="dropdown-content">
-                <a href="2021iros-workshop.html">IROS 2021</a>
-              <a href="2020iros-mechanismdesign-workshop.html">IROS 2020</a>
-              <a href="mechanismdesign-2020icra-workshop.html">ICRA 2020</a>
-              <a href="aim2020.html">AIM 2020</a>
-              <a href="aim-soft-robot-workshop.html">AIM Soft Robot Workshop 2020</a>
-              <a href="aim-mechatronics-for-infectious-diseases.html">AIM Mechatronics 4 Infectious Diseases Special Session 2020</a>
-              
-              <a href="biorob2020.html">BioRob Workshop 2020</a>
-              <a href="softroboticsworkshop.html">Soft Robot Workshop 2019</a>
-              <a href="https://sites.google.com/view/aim2019-soft">AIM 2019</a>
-              
+  <header>
+    <div class="view1">
+      <a href="index.html">
+        <img id="logo" src="img/newMIMC/logo.png" alt="">
+      </a>
+      <div id="labname">
+        MIMC医学智能与机器认知实验室
+      </div>
+
+    </div>
+  </header>
+
+  <nav>
+    <div class="navitems">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+              <a href="research.html" class="dropbtn">Research</a>
+              <div class="dropdown-content">
+                <a href="research.html">Research Introduction</a>
+                <a href="sharing.html">Research Case Sharing</a>
             </div>
+      <a href="people.html">People</a>
+      <a href="publications.html">Publications</a>
+      <!-- <a href="robots.html">Robots</a> -->
+      <a href="news.html"><b>News</b></a>
+      <!-- <a href="joining.html">Opportunity</a> -->
+      <!-- <a href="https://assistiverobotcenter.github.io">Assistive Robot Center</a>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Workshop</a>
+        <div class="dropdown-content">
+          <a href="https://sites.google.com/view/xiaocong-li/events/aim-2025-workshop">AIM 2025</a>
+          <a href="https://sites.google.com/view/icra2025-workshop-clsr">ICRA 2025 Surgical Robot Workshop</a>
+          <a href="https://sites.google.com/view/reliable-embodied-ai/home">ICRA 2025 Reliable Embodied AI Workshop</a>
+          <a href="2021iros-workshop.html">IROS 2021</a>
+          <a href="2020iros-mechanismdesign-workshop.html">IROS 2020</a> -->
+          <!--<a href="mechanismdesign-2020icra-workshop.html">ICRA 2020</a>-->
+          <!--<a href="aim2020.html">AIM 2020</a>-->
+          <!-- <a href="aim-soft-robot-workshop.html">AIM Soft Robot Workshop 2020</a>
+          <a href="aim-mechatronics-for-infectious-diseases.html">AIM Mechatronics 4 Infectious Diseases Special Session
+            2020</a>
+
+          <a href="biorob2020.html">BioRob Workshop 2020</a>
+          <a href="softroboticsworkshop.html">Soft Robot Workshop 2019</a>
+          <a href="https://sites.google.com/view/aim2019-soft">AIM 2019</a>
+
+        </div>
+      </div> -->
+      <a href="contact.html">Contact</a>
+      <!-- <a href="site/index.html">Wiki</a> -->
+    </div>
+  </nav>
+
+
+  <div class="content clearfix">
+
+    <!-- starting page content-->
+
+    <article class="publication-detail">
+
+      <!--<p>&nbsp;</p>
+      <p><strong>May 2020 </strong></p>
+
+        <p>Dr. Hao Su and lab members attended the <a href="https://www.dynamicwalking.org/index.php/dw/2020/schedConf/program">Dynamic Walking 2020</a> on the virtual conference to present quasi-direct drive portable knee exoskeleton and hip exoskeleton.
+          <br>1. <a href="https://www.seas.upenn.edu/~posa/DynamicWalking2020/722-1092-1-RVP.pdf">A Lightweight and High Torque Hip Exoskeleton with Quasi-Direct Drive Actuation for Independent Living Assistance</a>
+          <br>2. <a href="https://www.seas.upenn.edu/~posa/DynamicWalking2020/732-1107-1-RVP.pdf">Lightweight, Backdrivable, and High-Bandwidth Knee Exoskeleton with Quasi-Direct Drive Actuation</a>
+        </a></p>
+        <br>-->
+      <!--
+    <p>&nbsp;</p>
+      <p><strong>May 2020 </strong></p>
+      <p>These are the posters that we showed at <a href="https://www.dynamicwalking.org/index.php/dw/2020/schedConf/program">Dynamic Walking</a>. <br>
+        1. <a href="https://www.seas.upenn.edu/~posa/DynamicWalking2020/722-1092-1-RV.pdf">Lightweight and High Torque Hip Exoskeleton with Quasi-Direct Drive Actuation</a>
+        <object data="img/Paper/2020DMD-Hip Exoskeleton with Quasi-Direct Drive Actuation_Poster.pdf" type="application/pdf" width="1000" height="700">
+          <embed src="img/Paper/2020DMD-Hip Exoskeleton with Quasi-Direct Drive Actuation_Poster.pdf">
+              <!--<p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://example.com/yourpdf.pdf">Download PDF</a>.</p>-->
+      <!--</embed>
+      </object>-->
+
+      <!--<br><br><br>
+      2. <a href="https://www.seas.upenn.edu/~posa/DynamicWalking2020/732-1107-1-RV.pdf">Lightweight, Backdrivable, and High-Bandwidth Knee Exoskeleton with Quasi-Direct Drive Actuation</a>
+      <object data="img/Paper/2020DMD-Knee Exoskeleton with Quasi-Direct Drive Actuation_Poster.pdf" type="application/pdf" width="1000" height="700">
+        <embed src="img/Paper/2020DMD-Knee Exoskeleton with Quasi-Direct Drive Actuation_Poster.pdf">-->
+      <!--<p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://example.com/yourpdf.pdf">Download PDF</a>.</p>-->
+      <!--</embed>
+    </object>
+        </p>
+        <br>-->
+
+      <!--<iframe src="img/Paper/2020DMD-Knee Exoskeleton with Quasi-Direct Drive Actuation_Poster.pdf" width="1000" height="700" frameborder="0"></iframe>-->
+
+      <!--<p>&nbsp;</p>
+      <p><strong>May 2020 </strong></p>
+      <p>Our lab won the second prize of <a href="http://www.dmd.umn.edu/2020/three-in-five.html">Three in Five Competition</a> on ASME Annual Design of Medical Devices Conference.
+      </p>
+        <br>-->
+      <p>&nbsp;</p>
+      <p><strong>研究方向与研究成果： </strong></p>
+      <p> 医学影像智能分析<br>
+
+（1）提出动态影像组学新方法，在乳腺、泌尿、神经系统、消化系统等领域广泛应用；<br>
+
+（2）发明智眸病理图像分析系统，目前已推广至复旦大学附属华山医院、西京医院、中南大学湘雅医院、上海第十人民医院、中国医科大学附属第一医院、盛京医院等20余家区域中心医疗机构，多中心合作项目参与医生百余人；<br>
+
+（3）皮肤病理AIGC大模型；<br>
+
+基于视觉的嵌入式系统开发<br>
+
+（1）基于FPGA的图像增强算法，开发出静脉显像系统，在数十家临床科室应用；<br>
+
+（2）基于国产ARM芯片的内窥镜视觉成像系统研发，开发出北方首个一次性软管内窥镜，获二类医疗器械两项，助力东北全面振兴；<br>
+
+（3）发明宫颈光热治疗仪，高效清除高危 HPV 感染，开辟防治高危 HPV 致癌的新路径，为宫颈癌一级预防提供新路径；</p>
+      <br>
+      <!-- <center>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/laiS5nbWShs?si=NQ75A-zFhkSvMzYE"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center> -->
+      <p>&nbsp;</p>
+
+	<p>&nbsp;</p>
+      <p><strong>科技成果转化出的系列产品： </strong></p>
+      <p> 智眸病理图像分析系统，合作单位：碳卡智造（苏州）</p>
+      
+      <br>
+      <center>
+		<!-- <iframe width="560" height="315" src="img/newMIMC/binglijiqi.mp4" title="病理图像诊断" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br> -->
+    <img src="img/newMIMC/bingliLLM.png" height="350"><br>
+    <img src="img/newMIMC/bingliLLMMed.png" height="350">
+      </center>
+      <p>&nbsp;</p>
+      <p> 动作捕捉传感器及算法，合作单位: 宇叠科技（上海）</p>
+      
+      <br>
+      <center>
+		<!-- <iframe width="560" height="315" src="img/newMIMC/binglijiqi.mp4" title="病理图像诊断" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br> -->
+    <img src="img/newMIMC/yifu.png" height="350">
+    <img src="img/newMIMC/yifu1.jpg" height="350">
+    <img src="img/newMIMC/shoutao.jpg" height="350">
+      </center>
+      <p>&nbsp;</p>
+      <p> 一次性膀胱肾盂内窥镜，合作单位：隆科医疗（辽宁） </p>
+      
+      <br>
+      <center>
+		<!-- <iframe width="560" height="315" src="img/newMIMC/binglijiqi.mp4" title="病理图像诊断" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br> -->
+    <img src="img/newMIMC/neikuijing.png" height="350">
+    <img src="img/newMIMC/neikuijing2.png" height="350">
+      </center>
+      <p>&nbsp;</p>
+      <p> 静脉显像系统 </p>
+      
+      <br>
+      <center>
+		<iframe width="560" height="315" src="img/newMIMC/neikuijing.mp4" title="静脉显示" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+    <!-- <img src="img/newMIMC/neikuijing.png" height="350"> -->
+    <!-- <img src="img/newMIMC/neikuijing2.png" height="350"> -->
+      </center>
+      <p>&nbsp;</p>
+
+
+      <!-- <p>&nbsp;</p>
+      <p><strong>July, 2025 </strong></p>
+      <p> Dr. Hao Su is an invited speaker at the Data-Enabled Learning Control for Intelligent Mechatronics and Robotics workshop of the 2025 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM2025).
+      </p>
+      <br>
+      <center><img src="img/news/2025 ICRA Towards Reliable & Trustworthy Embodied AI in Everyday Scenarios.png" height="350"> </center>
+      <p>&nbsp;</p>
+      
+      
+      <p>&nbsp;</p>
+      <p><strong>May, 2025 </strong></p>
+      <p> Dr. Hao Su served as a organizer and an invited speaker at the first International Workshop on the Evolving Landscape of Surgical Robotics: Towards AI-Powered Unconventional Instruments and Technologies in the Operating Theatre
+         at the IEEE International Conference on Robotics and Automation (ICRA) 2025.
+      </p>
+      <br>
+      <center><img src="img/news/2025 ELSR Workshop.JPG" height="350"> </center>
+      <p>&nbsp;</p>
+      
+      
+      <p>&nbsp;</p>
+      <p><strong>May, 2025 </strong></p>
+      <p> Dr. Hao Su is an invited speaker at the Towards Reliable & Trustworthy Embodied AI in Everyday Scenarios workshop of the IEEE International Conference on Robotics and Automation (ICRA) 2025.
+      </p>
+      <p>&nbsp;</p>
+      
+      
+      <p>&nbsp;</p>
+      <p><strong>October, 2024 </strong></p>
+      <p> Dr. Hao Su is an invited speaker at the Duke Medical Robotics Symposium 2024 about future of surgical robots.</p>
+
+      <p>&nbsp;</p>
+
+      
+      <p>&nbsp;</p>
+      <p><strong>September, 2024 </strong></p>
+      <p> Dr. Hao Su delivered a keynote talk in the Medical and Healthcare Robotics Digital Summit. His talk is AI-Powered Wearable and Surgical Robots: Smaller, Stronger, Smarter.</p>
+                  <font color="#819FF7">
+        <a href="https://www.youtube.com/watch?v=XIgSJYFRz8c&list=PLZwpOtY5YJ63R2oXxbLP-N6dFPYurtMC0&index=11&t=880s">AI-Powered Wearable and Surgical Robots: Smaller, Stronger, Smarter</a>
+      </font><br><br>
+                <font color="#819FF7">
+        <a href="      https://events.ringcentral.com/events/medical-and-healthcare-robotics-digital-summit-2024#speakers">Medical and Healthcare Robotics Digital Summit</a>
+      </font><br><br>
+      <p>&nbsp;</p>
+
+
+
+      
+      <p>&nbsp;</p>
+      <p><strong>June, 2024 </strong></p>
+      <p> Our paper titled
+        <a href="https://www.science.org/doi/10.1126/sciadv.ado6476">
+          "Reprogrammable and reconfigurable mechanical computing metastructures with stable and high-density
+          memory"</a> has been published in the journal Science Advances!
+      </p>
+      <p>&nbsp;</p>
+      <p>This collaborative effort demonstrated akirigami-inspired mechanical computer that uses a complex structure of
+        rigid, interconnected polymer cubes to store,
+        retrieve and erase data without relying on electronic components.
+        The system also includes a reversible feature that allows users to control when data editing is permitted and
+        when data should be locked in place. </p>
+      <p>&nbsp;</p>
+      <p>The paper was co-authored by Prof. Jie Yin of the Department of Mechanical and Aerospace Engineering, North
+        Carolina State University. </p>
+      <p>&nbsp;</p>
+      <p>NC State University has published a <a href="https://news.ncsu.edu/2024/06/kirigami-mechanical-computer/"> cover
+          news</a> introducing this work. </p>
+      <p>Video introducing this work: </p>
+      <br>
+      <center>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/A64xxcal2hY?si=F9dCMVc3qWg5qKXV"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+      <p>&nbsp;</p>
+
+      <p>&nbsp;</p>
+
+
+      <p>&nbsp;</p>
+      <p><strong>Febraury, 2024 </strong></p>
+      <p> Dr. Sainan (Selena) Zhang, who was a Ph.D. student supervised by Prof. Hao Su, and now a postdoctoral research
+        scholar working in the BIRO lab, proudly announces our paper titled
+        "Actuator Optimization and Deep Learning-Based Control of Pediatric Knee Exoskeleton for Community-Based
+        Mobility Assistance" has been officially published in the respected journal "Mechatronics" (Elsevier)! This
+        collaborative effort
+        explores cutting-edge advancements in optimizing actuators and applying deep learning techniques to control
+        pediatric knee exoskeletons for community-based mobility assistance. </p>
+       <br>-->
+      <!-- <p>&nbsp;</p>
+
+      <center>
+        <img src="img/news/Mechtronics_Figure1.png" height="200">
+        <img src="img/news/A photo of us with NIH collaborators.png" height="200">
+        <img src="img/news/SainanZhang.jpg" height="200">
+      </center>
+      <center><iframe width="560" height="315" src="https://www.youtube.com/embed/6CT3I20nbys?si=uZwANVaC1G26cVVN"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+
+
+
+      <p>&nbsp;</p>
+      <p><strong>January, 2024 </strong></p>
+      <p> Jan 2024, Dr. Hao Su was awarded grant "Improving Safety and Efficacy of Minimally Invasive Endovascular Surgery via Robotics " has been selected for funding under Research and Innovation Seed Funding (RISF) of NCSU
+</p>
+      <p>&nbsp;</p>
+
+
+      
+      <p>&nbsp;</p>
+      <p><strong>January, 2024 </strong></p>
+      <p>Dr. Hao Su participated 2024 Gordon Research Conference (Robotics). </p>
+      <font color="#819FF7">
+        <a href="https://www.grc.org/robotics-conference/2024/">Physically and Computationally Intelligent Behaviour in
+          Robots</a>
+      </font><br><br>
+      <center><img src="img/news/2024 Gordon conference group photo.png" height="400"> </center> -->
+
+
+
+
+      <!--<p>&nbsp;</p>
+      <p><strong>May 2020 </strong></p>
+      <p>Our lab won the second prize of <a href="http://www.dmd.umn.edu/2020/three-in-five.html">Three in Five Competition</a> on ASME Annual Design of Medical Devices Conference.
+      </p>
+        <br>-->
+      <!-- <p>&nbsp;</p>
+      <p><strong>November, 2023 </strong></p>
+      <p> Congratulations！Sainan Zhang, a Ph.D. student at the BIRO Lab, has successfully defended her doctoral
+        dissertation.
+        The dissertation defense, titled "Actuator Optimization and Control of Pediatric Knee Exoskeleton for
+        Community-based Mobility Assistance: Lighter, More Affordable, and More Stable,"
+        marks a significant milestone in Zhang's academic journey, showcasing her dedication and expertise in the field.
+        Zhang expressed her gratitude to her mentor, Professor Hao Su,
+        for his guidance and support throughout her doctoral studies. The BIRO Lab extends heartfelt congratulations to
+        Zhang on this remarkable accomplishment,
+        wishing her continued success in her future endeavors. </p> -->
+      <!-- <br>-->
+      <!-- <p>&nbsp;</p>
+
+      <center>
+        <img src="img/news/Sainan_Defense_1.jpg" height="200">
+        <img src="img/news/Sainan_Defense_2.jpg" height="200">
+        <img src="img/news/Sainan_Defense_3.jpg" height="200">
+      </center>
+      <center>
+        <img src="img/news/Sainan_Defense_4.jpg" height="300">
+      </center>
+
+      <p>&nbsp;</p>
+      <p><strong>October, 2023 </strong></p>
+      <p>Dr. Wei Chen visited Dr. Hao Su’s Biomechatronics and Intelligent Robotics Lab. She is the Wilson-Cook
+        Professor in Engineering Design and Chair of the Department of Mechanical Engineering at Northwestern
+        University.
+        Dr. Su and his students showcased their work with multiple soft, surgical and humanoid robots. </p>
+      <font color="#819FF7">
+        <a href="https://www.mae.ncsu.edu/event/mae-seminar-series-wei-chen/">MAE Distinguished Lecture: Wei Chen</a>
+      </font><br><br>
+      <center><img src="img/news/Chen.jpg" height="250"> </center>
+
+
+      <p>&nbsp;</p>
+      <p><strong>October, 2023 </strong></p>
+      <p>The Biomechatronics and Intelligent Robotics Lab joined the 2023 IEEE/RSJ International Conference on
+        Intelligent Robots and Systems (IROS) event and shared their recent work on exoskeleton design and control. </p>
+      <p>&nbsp;</p>
+      <p>Dr. Hao Su delivered a remarkable presentation during the workshop "State of the Art in Robotic Leg Prostheses:
+        Where We Are and Where We Want to Be" </p>
+      <p>&nbsp;</p>
+      <p></p>Jason Huang and Israel Dominguez, Ph.D. candidates, participated in the workshop "Assistive Robotics for
+      Citizens", and
+      presented our latest hip (<a
+        href="PDFs/2023_IROS Jason_Lightweight_and_Modular_Hip_and_Knee_Exoskeletons_A_Mechatronics_Design.pdf">link</a>)
+      and shoulder exoskeleton (<a
+        href="PDFs/2023_IROS_Jason Design of Lightweight and Portable Soft Shoulder Exoskeleton in Community Settings.pdf">link</a>)
+      designs through a hardware demonstration.</p> -->
+      <!-- <br>-->
+      <!-- <p>&nbsp;</p>
+
+      <center><img src="images/2023IROS/iros1.jpg" height="300">
+        <img src="images/2023IROS/iros2.jpg" height="300">
+        <img src="images/2023IROS/iros3.jpg" height="300">
+      </center>
+
+
+
+
+      <p>&nbsp;</p>
+      <p><strong>September, 2023 </strong></p>
+      <p>Our lab has recently published a groundbreaking paper titled "Physically intelligent autonomous soft robotic
+        maze escaper" (<a href="PDFs/2023 Yao Zhao Science Advances.pdf">paper link</a>) in the prestigious Science
+        Advances and is now available for public access.</p>
+      <p>Paper citation: Zhao, Y., Hong, Y., Li, Y., Qi, F., Qing, H., Su, H., & Yin, J. (2023). Physically intelligent
+        autonomous soft robotic maze escaper. Science Advances, 9(36), eadi3254.</p> -->
+      <!-- <br>-->
+      <!-- <p>&nbsp;</p>
+
+      <p><strong>September, 2023 </strong></p>
+      <p>PhD candidate Junxi Zhu received 2022 Best Paper in Mechatronics Award (<a
+          href="PDFs/2022_TMECH_Prosthesis.pdf">paper link</a>) that will be officially announced and presented at the
+        Mechatronics TC meeting on Oct. 3 at the Modeling, Estimation and Control Conference at Lake Tahoe, NV. Junxi
+        will be present at the meeting to receive the award.</p>
+      <p>Paper citation: J. Zhu, C. Jiao, I. Dominguez, S. Yu and H. Su, "Design and Backdrivability Modeling of a
+        Portable High Torque Robotic Knee Prosthesis With Intrinsic Compliance for Agile Activities,"
+        in IEEE/ASME Transactions on Mechatronics, vol. 27, no. 4, pp. 1837-1845, Aug. 2022</p> -->
+      <!-- <br>-->
+      <!-- <p>&nbsp;</p>
+
+      <p><strong>August, 2023 </strong></p>
+      <p>Dr. Su received 2nd NIH R01 grant and the project title is "Spine-Hip Exoskeletons with Learning-Based Optimal
+        Control for Low Back Pain Alleviation" (1R01EB035404-01), to develop spine-hip exoskeleton for injury mitigation
+        of workers. </p> -->
+      <!-- <br>-->
+      <!-- <p>&nbsp;</p>
+
+      <p><strong>August, 2023 </strong></p>
+      <p>Dr. Su is invited to join Editorial Advisory Board, International Journal of Medical Robotics and Computer
+        Assisted Surgery.</p> -->
+      <!-- <br>-->
+      <!-- <p>&nbsp;</p>
+
+
+      <p>&nbsp;</p>
+      <p><strong>June 3, 2023 </strong></p>
+      <p></p>Israel Dominguez presented our work "Reinforcement Learning through Physics-based and Data-driven
+      Approaches for Exoskeleton Control in the Real World " at the 2023 IEEE International Conference on Robotics and
+      Automation (ICRA), Workshop: Neuromechanics Meets Deep Learning. London, UK.</p>
+      <br>
+      <p>Israel participated in 3 workshops at ICRA: </p>
+      <br>
+      <p>Monday, May 28</p>
+      <ul>
+        <li>Communicating Robot Learning Across Human-robot Interaction, Monday</li>
+        <li> Neuromechanics Meets Deep Learning, Monday</li>
+      </ul>
+      <br>
+      <p>Friday, June 3</p>
+      <ul>
+        <li> Harvard Computer Vision for Wearable Robotics Workshop, Friday</li>
+      </ul>
+
+      <center><img src="images/2023ICRA/icra1.jpg" height="350"></center>
+      <center><img src="images/2023ICRA/icra2.jpg" height="250">
+        <img src="images/2023ICRA/icra3.jpg" height="250">
+      </center> -->
+      <!-- <br>-->
+      <!-- <p>&nbsp;</p>
+
+
+      <p>&nbsp;</p>
+      <p><strong>April, 2023 </strong></p>
+      <p>Biomechatronics and Intelligent Robotics Lab Ph.D. Candidates visited the Brain Tool Laboratory
+        directed by Dr. Patrick Codd with the Department of Neurosurgery and the Pratt School of Engineering
+        at Duke University in Durham, NC.</p>
+      <center><img src="images/2023 Duke BrainTools/photo.jpeg" height="400"></center> -->
+      <!-- <br>-->
+      <!-- <p>&nbsp;</p>
+
+
+      <p>&nbsp;</p>
+      <p><strong>April, 2023 </strong></p>
+      <p>Dr. Su presented the Biomechatronics and Intelligent Robotics Lab latest research about wearable robots at the
+        Wearable Robotics Association WearRAcon 23 hosted in the Hyatt Regency New Orleans, Louisiana
+        <br>The Ph.D. Candidate, Israel Dominguez, and Master Candidate, Jason Huang, performed a hardware demonstration
+        of the BiroLab hip, knee, and upper-limb exoskeletons
+      </p>
+      <center><img src="images/2023WearRAcon/photo (1).jpeg" height="350"></center>
+      <center><img src="images/2023WearRAcon/photo (1).jpg" height="250">
+        <img src="images/2023WearRAcon/photo (2).jpg" height="250">
+        <img src="images/2023WearRAcon/photo (3).jpg" height="250">
+      </center> -->
+      <!-- <br>-->
+      <!-- <p>&nbsp;</p>
+
+
+      <p>&nbsp;</p>
+      <p><strong>November, 2022 </strong></p>
+      <p>Dr. Su gave invited talk with Dr. Thomas Bulea at National Institute of Health titled “Affordable Wearable
+        Robots for Translational Medicine” at Global Perspectives on Medicine, Rehabilitation and Robotics
+        Webinar Series organized by Prof. Michelle Johnson at UPenn and Prof. Rochelle Mendonca at Columbia U.</p> -->
+      <!-- <br>-->
+      <!-- <p>&nbsp;</p>
+
+
+
+      <p>&nbsp;</p>
+      <p><strong>October, 2022 </strong></p>
+      <p>Dr. Hao Su received a Distinguished Switzer Fellowship from the National Institute on Disability, Independent
+        Living, and Rehabilitation Research (NIDILRR).
+        The project title is “Biomechanical Benefits of Lightweight Wearable Robots for Community-Based Mobility
+        Assistance of Children with Crouch Gait from
+        Cerebral Palsy.”</p> -->
+      <!-- <br>-->
+      <!-- <p>&nbsp;</p>
+
+      <p>&nbsp;</p>
+      <p><strong>September, 2022 </strong></p>
+      <p>Dr. Su received NSF Future of Work grant to design image-guided semi-autonomous surgical robots to protect
+        healthcare workers.
+        The project is titled "Safeguarding the Health of Healthcare Workers During Future Pandemics, Using Robotics and
+        Automation"</p> -->
+      <!-- <br>-->
+      <!-- <p>&nbsp;</p>
+
+
+
+      <p>&nbsp;</p>
+      <p><strong>July, 2022 </strong></p>
+      Professor Su presented the recent research from the Biomechatronics and Intelligent Robotics Lab at the National
+      Workshop on Human-like Robots sponsored by the
+      National Science Foundation (NSF) and hosted in Arlington, VA.<br><br>
+      Israel Dominguez (BIROLab PhD student) represented our lab in the National Workshop on Human-like Robots
+      (In-Person)<br><br>
+      <center><img src="img/2022 Robots HumanLike/HumanLikeRobots.jpg" height="250"></center>
+      <center> <img src="img/2022 Robots HumanLike/HumanLikeRobots2.jpg" height="200">
+        <img src="img/2022 Robots HumanLike/HumanLikeRobots3.jpg" height="200">
+      </center>
+      <p>&nbsp;</p>
+
+      <p>&nbsp;</p>
+      <p><strong>July, 2022 </strong></p>
+      <p>Professor Hao Su has been appointed a Technical Editor of IEEE/ASME Transactions on Mechatronics, a
+        high-quality archival journal which presents the state of the art, recent advances and practical applications of
+        mechatronics.</p> -->
+      <!-- <br>-->
+      <!-- <p>&nbsp;</p>
+
+
+
+      <p>&nbsp;</p>
+      <p><strong>June, 2022 </strong></p>
+      <p>Israel Dominguez (BIROLab PhD student) participated with the talk "Design and Control of High Compliance and
+        High Bandwidth Wearable Robots for Versatile Activities" at The 2022 Dynamic Walking Conference hosted in
+        Madison, Wisconsin</p>
+      <br>
+      <center><img src="img/2022DynamicWalking/DW1.jpeg" height="200">
+        <img src="img/2022DynamicWalking/DW2.png" height="200">
+      </center>
+      <p>&nbsp;</p>
+
+      <p>&nbsp;</p>
+      <p><strong>May 23, 2022 </strong></p>
+      <p>The Biomechatronics and Intelligent Robotics Lab members presented four papers at The IEEE International
+        Conference on Robotics and Automation 2022 (ICRA'22) hosted in Philadelphia, Pennsylvania</p>
+      <p>Workshops</p>
+      <font color="#819FF7">
+        <a href="https://sites.google.com/andrew.cmu.edu/softactuatormetrics/">Determining Appropriate Metrics and Test
+          Methods for Soft Actuators in Robotic Systems</a>
+      </font><br>
+      <font color="#819FF7">
+        <a href="https://sites.google.com/view/helper-workshop/home">Human-in-the loop paradigm for assistive
+          robotics</a>
+      </font><br>
+      <center><img src="img/icraphoto.jpg" height="250"> </center>
+      <center><img src="img/icra2022/israicra.jpg" height="180"> <img src="img/icra2022/SainanKim.jpg" height="180">
+        <img src="img/icra2022/isramarco.png" height="180"> <img src="img/icra2022/isradavide.png" height="180">
+      </center>
+      <center><img src="img/icra2022/menghanICRA.jpeg" height="150"> <img src="img/icra2022/sainanICRA.jpeg"
+          height="150"> <img src="img/icra2022/weiboICRA.jpeg" height="150"> </center>
+      <p>&nbsp;</p>
+      <p><strong>May 23, 2022 </strong></p>
+      <p>Weibo Gao (BIROLab PhD student) participated with a talk in the workshop "Determining Appropriate Metrics and
+        Test Methods for Soft Actuators in Robotic Systems"
+        for The IEEE International Conference on Robotics and Automation 2022 (ICRA'22) hosted in Philadelphia,
+        Pennsylvania</p>
+      <font color="#819FF7">
+        <a href="https://sites.google.com/andrew.cmu.edu/softactuatormetrics/">ICRA 2022 Workshop</a>
+      </font><br>
+
+      <p>&nbsp;</p>
+      <p><strong>May, 2022 </strong></p>
+      <p>Dr. Su is pleased to give invited talk in the workshop "Robotic Technologies for Elderly Walking Assistance"
+        for The 2022 IEEE International Conference on Advanced Robotics and its Social Impacts (ARSO) hosted in Long
+        Beach, California</p>
+      <font color="#819FF7">
+        <a href="https://attend.ieee.org/arso-2022/">Welcome to ARSO 2022</a>
+      </font><br>
+
+      <p>&nbsp;</p>
+      <p><strong>April, 2022 </strong></p>
+      <p>The NC State Chancellor visited Dr. Hao Su’s Biomechatronics and Intelligent Robotics Lab, where Dr. Su and his
+        students showcased their work
+        with multiple soft, surgical and humanoid robots. </p>
+      <font color="#819FF7">
+        <a href="https://www.mae.ncsu.edu/2022/04/06/chancellor-visits-mae/">NCSU: Chancellor visits MAE</a>
+      </font><br><br>
+      <center><img src="img/ChancellorVisit.png" alt=""> </center>
+
+
+      <p>&nbsp;</p>
+      <p><strong>March, 2022 </strong></p>
+      <p>Dr. Su received a grant to conduct clinical testing of our lightweight knee exoskeleton with Dr. Peter Barrance
+        at Kessler Foundation,
+        a top 3 rehabilitation hospital research center in the US, to evaluate the biomechanics and pain relief of
+        exoskeleton-assisted locomotion
+        for people with musculoskeletal impairments.</p>
+
+      <p>&nbsp;</p>
+      <p><strong>February 25<sup>th</sup>, 2022 </strong></p>
+      <p>Shuangyue Yu successfully completed his thesis defense and finished his doctoral program. CONGRATULATIONS</p>
+
+      <p>&nbsp;</p>
+      <p><strong>February 2022 </strong></p>
+      <p>PhD student from BIRO lab, Shuangyue Yu won Best Student Paper Award, Dynamic Systems & Control Division
+        (DSCD), American Society of Mechanical Engineers (ASME), selected from 4 international conferences (1200+
+        papers), including 2020 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM, 262
+        papers),
+        2020 American Control Conference (ACC, 800+ papers), 2020 ASME DSCD Dynamic Systems and Control Conference
+        (DSCC, 140 papers),
+        2020 International Symposium on Flexible Automation (ISFA, 55 papers)</p>
+      <strong><img src="img/pdf-logo.png" alt="">
+        <font color="#819FF7">
+          <a href="img/award/Mechatronics TC AIM Best Student Paper_Yu.pdf">AWARD</a>
+        </font>
+      </strong><br>
+
+      <p>&nbsp;</p>
+      <p><strong>October 2021 </strong></p>
+      <p>Our Lab won the Best Poster Award, Workshop Challenges and Opportunities of Human-robot Symbiosis: from
+        Wearable Robots to Neurorobotics,
+        International Conference on Intelligent Robots and Systems (IROS), Prague, Czech Republic, 2021</p><br>
+
+      <p><strong>July 2021 </strong></p>
+      <p>Dr. Su delivered the talk “Unleash the Tether: High Force Actuators for Portable and Efficient Soft Robots"
+        for The 2021 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM).</p>
+      <font color="#819FF7">
+        <a href="https://aim2021.org/program/workshops/">AIM 2021 Workshops</a>
+      </font><br>
+
+      <p>&nbsp;</p>
+      <p><strong>June 2021 </strong></p>
+      <p>Dr. Su presented the talk “Unleash the Tether: High Force Actuators for Portable and Efficient Soft Robots"
+        for The Seasonal School on “Rehabilitation and Assistive Technologies based on Soft Robotics” (SofTech-Rehab)
+        sponsored by the IEEE Robotics & Automation Society.</p>
+      <font color="#819FF7">
+        <a href="https://www.softech-rehab.com/?page_id=6">SofTech-Rehab Program</a>
+      </font><br>
+
+      <p>&nbsp;</p>
+      <p><strong>March 2021 </strong></p>
+      <p>Two of our co-authored paper with Professor Axel Krieger, Russel H. Taylor and Robin R. Murphy on discussing
+        the role that robots take in tackling with the COVID19 pandemic were published on <a
+          href="https://www.nature.com/articles/s42256-021-00324-z">Nature Machine Intelligence</a> and <a
+          href="https://robotics.sciencemag.org/content/6/52/eabf1462">Science Robotics</a>. Two paper are titled
+        <strong><a
+            href="PDFs/Physical human–robot interaction for clinical care in infectious environments.pdf">Physical
+            human–robot interaction for clinical care in infectious environments</a></strong> and <strong><a
+            href="PDFs/Progress in robotics for combating infectious diseases.pdf">Progress in robotics for combating
+            infectious diseases</a></strong>.
+      </p><br>
+
+      <p>&nbsp;</p>
+      <p><strong>August 2020 </strong></p>
+      <p>Dr. Su will lead an 8 faculty team from CUNY, NYU and Rutgers with $2.78M National Science Foundation (NSF)
+        Grant to develop Perceptive and Adaptive Soft (PECASO) Robots to impact the future of work at the
+        Human-Technology Frontier. </p><br>
+
+      <p>&nbsp;</p>
+      <p><strong>July 2020 </strong></p>
+      <p>Two of our works were awarded in the <a href="http://aim2020.org/">2020 IEEE/ASME International Conference on
+          Advanced Intelligent Mechatronics (AIM 2020)</a>:
+        <strong>Quasi Direct Drive Actuation for a Lightweight Hip Exoskeleton with High Backdrivability and High
+          Bandwidth</strong>
+        was selected finalist in the <strong>Best Student Paper Award</strong>, and
+        <strong>An Untethered Electro-Pneumatic Soft System for People with Foot Drop</strong> received the
+        <strong>third prize of Student Design Competition</strong>.
+        First authors are the PhD student Shuangyue Yu and the undergraduate student Lizzette Salmeron, respectively,
+        mentored by Prof. Su.
+        <a href="https://youtu.be/pYNGj2CC2iQ">[Video 1]</a>
+        <a href="https://youtu.be/kGXHp_rh6GY">[Video 2]</a>
+        <a href="img/award/Best Student Paper Finalist-AIM2020-Yu.pdf">[Award 1]</a>
+        <a href="img/award/Student Design Competition Winners-AIM2020-ThirdPlace.pdf">[Award 2]</a>
+        <br> -->
+
+        <!--<div class="personfile" class="profileimg">-->
+        <!--<div align="middle"><img  src="img/lizz.jpg" width="136" height="172" align="middle" alt="vertical-align:middle">
+        <br>Lizzette Salmeron</div>
+     </div>-->
+
+
+
+      <!-- <p>&nbsp;</p>
+      <p><strong>May 2020 </strong></p>
+      <p>Our paper <strong>Untethered Electro-Pneumatic Exosuit for Gait Assistance of People with Foot Drop</strong>
+        received the <strong>second prize</strong> of <a href="http://www.dmd.umn.edu/2020/three-in-five.html">Three in
+          Five Competition in ASME Design of Medical Devices Conference</a>. This paper was led by undergraduate
+        students Lizzette Salmeron and Gladys Juca and mentored by Prof. Su.
+        <a href="https://youtu.be/1yphY3qDZ3o">[Video]</a>
+        <a href="img/award/Certificate of Award-3in5-2nd-GJ.pdf">[Award 1]</a>
+        <a href="img/award/Certificate of Award-3in5-2nd-LS.pdf">[Award 2]</a>
+      </p> -->
+
+      <!--<div align="middle"><img  src="img/lizz.jpg" width="136" height="172" align="middle" alt="vertical-align:middle">
+        <br>Lizzette Salmeron</div>
+     </div>-->
+
+      <!-- <center>
+        <table id="tbl" border=0 frame=void vertical-align="top" style="table-layout: fixed"> -->
+          <!--id="tbl" border=1 rules=none frame=void-->
+          <!-- <tr>style="vertical-align:top" -->
+            <!-- <td>valign="top"
+              <img src="img/lizz.jpg" width="136" height="172" alt="" style="vertical-align:middle"><br>
+              <p style="color:black">
+                Lizzette Salmeron
+              </p>
+            </td>
+            <td>
+              <img src="img/gladys.jpg" width="136" height="172" alt="" style="vertical-align:middle"><br>
+              <p style="color:black">
+                Gladys V. Juca Castro
+              </p>
+            </td>
+          </tr>
+        </table>
+      </center>
+
+      <br>
+
+      <p>&nbsp;</p>
+      <p><strong>Apr 2020 </strong></p>
+      <a
+        href="https://www1.cuny.edu/mu/forum/2020/04/02/ccny-grove-schools-hao-su-earns-nsf-career-award-for-ai-powered-pediatric-exoskeleton-project/">
+        <p>Prof. Su received a National Science Foundation CAREER award for $552K, the agency's highest honor for
+          faculty members at the start of their research and teaching careers.
+      </a></p>
+      <br>
+
+      <p>&nbsp;</p>
+      <p><strong>Mar 2020 </strong></p>
+      <p>Our lab won the second prize of <a
+          href="http://www.wearablerobotics.com/wearracon-20/innovation-challenge/">WearRAcon Innovation Challenge</a>.
+      </p>
+      <br>
+
+      <p>&nbsp;</p>
+      <p><strong>Feb 2020 </strong></p>
+      <p>Our work in collaboration with Prof. Jie Yin at NCSU is accepted for publication in <strong>Science
+          Advances</strong>. Title is "Leveraging Elastic instabilities for Amplified Performance (LEAP): spine-inspired
+        high-speed and high-force soft robots"
+      </p>
+      <br>
+
+      <p>&nbsp;</p>
+      <p><strong>Jan 2020 </strong></p>
+      <p><a href="2020iros-mechanismdesign-workshop.html">IROS2020 workshop Mechanisms and Design: from Inception to
+          Realization</a> is accepted.
+        <br>Prof. Su is the organizer with Profs. Matei Ciocarlie at Columbia, Kyu-Jin Cho at Seoul National University,
+        Darwin Lau at Chinese University of Hong Kong, Claudio Semini at Istituto Italiano di Tecnologia, Damiano
+        Zanotto at Stevens Institute of Tech.
+      </p>
+      <br>
+
+      <p>&nbsp;</p>
+      <p><strong>Jan 2020 </strong></p>
+      <p>The President of City College of New York visited the lab to know more about the NIH R01 grant. Prof. Su gave
+        an introduction about the lab to the President. PhD and undergraduate students presented their soft robot
+        projects.
+      </p>
+      <br>
+      <p align="center"><img src="img/news/president meeting.jpg" width="672" height="378"></p>
+      <br>
+
+      <p>&nbsp;</p>
+      <p><strong>Nov 2019 </strong></p>
+      <p>Prof. Su is named Irwin Zahn Endowed Assistant Professor to recognize his teaching excellence.
+      </p>
+      <br>
+
+      <p>&nbsp;</p>
+      <p><strong>Oct 2019 </strong></p>
+      <p>Our lab received NIH R01 grant to study data-driven highly-dynamic cyber-physical systems that combine
+        high-performance actuators and artificial intelligence to develop exoskeletons and prostheses in collaboration
+        with Dr. Hartmut Geyer at CMU.
+      </p>
+      <br>
+
+      <p>&nbsp;</p>
+      <p><strong>Sep 2019</strong></p>
+      <p>Our lab received $1.3M grant to establish the Center of Assistive and Personal Robotics for Independent Living
+        (APRIL) that will develop affordable wearable robots for people with disabilities.
+      </p>
+      <br>
+
+      <p>&nbsp;</p>
+      <p><strong>10/05/2019</strong></p>
+      <p>Dr. Hao Su and lab members attended the Northeast Robotics Colloquium (NERC) 2019 in Philadelphia, PA. We
+        presented 3 posters.
+        <br><strong>1. Soft Wearable Robots for Injury Prevention and Performance Augmentation</strong>
+        <br><strong>2. Lightweight and Backdrivable Knee Exoskeletons for Injury Prevention and Pediatric
+          Rehabilitation</strong>
+        <br><strong>3. Soft and Strong Actuators for Upper Limb Augmentation</strong>
+      </p>
+      <br> -->
+      <!--<p align="center"><img src="img/news/1012.jpg" width="1000" height="260" ></p>-->
+
+      <!-- <p>&nbsp;</p>
+      <p><strong>10/12/2019</strong></p>
+      <p>Lab members attended the 27th CAST-USA Annual Convention, whose theme is Advance Science and Technology for the
+        Benefit of Humanity. Lab members had fun with Prof. Eric R. Kandel, M.D. who is the members of the United States
+        National Academy of Sciences and the Nobel Prize laureate in Physiology or Medicine.
+        <strong>2 students won the Best Poster Award</strong>
+      </p>
+      <br>
+      <p align="center"><img src="img/news/1005-7.jpg" width="760" height="260"></p>
+      <br>
+      <p align="center"><img src="img/news/1005.jpg" width="920" height="260"></p>
+
+      <p>&nbsp;</p>
+      <p><strong>09/27/2019</strong></p>
+      <p>&nbsp;</p>
+      <p>Prof. Arockia Selvakumar from Vellore Institute of Technology, India visited our Lab </p>
+      <br>
+      <p align="center"><img src="img/news/927-9.jpg" width="600" height="220"></p>
+
+      <p>&nbsp;</p>
+      <p><strong>09/27/2019</strong></p>
+      <p>&nbsp;</p>
+      <p>Biomechatronics Lab hosted visiting students Shotaro Higashi and Aiman Faruq from Toyohashi University of
+        Technology, Japan in September </p>
+      <br>
+      <p align="center"><img src="img/news/927-6.jpg" width="930" height="220"></p>
+
+      <p>&nbsp;</p>
+      <p><strong>09/12/2019</strong></p>
+      <p>&nbsp;</p>
+      <p>Prof. Kyujin Cho from Seoul National University delivered the IEEE RAS Distinguished Lecture on soft robotics.
+      </p>
+      <br>
+      <p align="center"><img src="img/news/Picture1.jpg" width="1000" height="220"></p>
+      <p>&nbsp;</p>
+
+      <p>&nbsp;</p>
+      <p><strong>08/23/2019</strong></p>
+      <p>&nbsp;</p>
+      <p>Dr. Hao Su and lab members attended Rehabilitation Robotics Symposium: From Design to Clinical Application
+        Dr. Su delivered invited talk “Soft, Strong, and Smart Wearable Robots for Mobility and Manipulation
+        Assistance”.
+        The talk was well-received by the audience consisting of clinicians, physical therapist, and engineers.
+      </p>
+      <br>
+      <p align="center"><img src="img/news/823.jpg" width="600" height="263"></p>
+      <p>&nbsp;</p>
+
+      <p>&nbsp;</p>
+      <p><strong>07/19/2019</strong></p>
+      <p>&nbsp;</p>
+      <p>PhD students Selina and Hang mentored three high school students from CT and NJ.</p>
+      <br>
+      <p align="center"><img src="img/news/719.jpg" width="347" height="260"></p>
+      <p>&nbsp;</p>
+
+      <p>&nbsp;</p>
+      <p><strong>07/13/2019</strong></p>
+      <p>&nbsp;</p>
+      <p>BMW engineer visited Biomechatronics Lab </p>
+      <br>
+      <p align="center"><img src="img/news/Picture4.jpg" width="226" height="260"></p>
+      <p>&nbsp;</p>
+
+      <p><strong>06/20/2019</strong></p>
+      <p>&nbsp;</p>
+      <p>Biomechatronics Lab hosted a birthday party for Howard</p>
+      <br>
+      <p align="center"><img src="img/news/620.jpg" width="347" height="260"></p>
+      <p>&nbsp;</p>
+
+      <p><strong>06/06/2019</strong></p>
+      <p>&nbsp;</p>
+      <p>Drs. Chen Feng, Ludovic Righetti, and Su organized <a
+          href="http://haosu-robotics.github.io/softroboticsworkshop.html"><strong>Soft Robotics and Learning
+            workshop.</strong></a>
+        More than 50 people attended the workshop.
+      </p>
+      <br>
+      <p align="center"><img src="img/news/Picture5.jpg" width="600" height="250"></p>
+      <p>&nbsp;</p>
+
+      <p><strong>04/2019</strong></p>
+      <p>&nbsp;</p>
+      <p>Best Paper Finalist, Three in Five Competition, ASME Annual Design of Medical Devices Conference
+      </p>
+      <br>
+      <p>&nbsp;</p>
+
+      <p><strong>08/2018</strong></p>
+      <p>&nbsp;</p>
+      <p>Dr. Hao Su co-organized CIPASS Mechatronics Workshop with Jorge Gonzalez-Cruz, Dr. Feridun Delale, and Dr. Fred
+        Moshary of the CIPASS Experiential Learning Team. Invited guests include Brian Wilson (CEO, DuroUAS), Dr. Biao
+        Zhang (lead principal scientist, ABB), Ranjan Mishra (principal engineer, Medtronic), and Dale Swarts (Senior
+        Director,Stryker). </p>
+      <p>&nbsp;</p>
+
+      <p align="center"><img src="img/20180824MechatronicsWorkshop.jpg" width="467" height="260"></p>
+      <p>Congratulations for Viktor Silivanov, Hadia Perez, Brian Lynn, and Tom Park for receiving the fellowship and
+        successfully defending their summer research work on soft exoskeletons sponsored by the CiPASS (CCNY Initiative
+        to Promote Academic Success in STEM) program. What a summer! We are proud of your achievement. </p>
+      <p>&nbsp;</p>
+      <p align="center"><img src="img/news/2018CiPassFellows.jpg" width="1000" height="250"></p>
+      <p>&nbsp;</p>
+      <p><strong>07/2018</strong><br>
+      </p>
+      <p>&nbsp;</p>
+      <p>Lab's first journal paper is accepted and we will present it in Spain! </p>
+      <p>J. Wang, X. Li, T. Huang, S. Yu, Y. Li, T. Chen, A. Carriero, M. Oh-Park, H. Su, “Comfort-Centered Design of a
+        Lightweight and Backdrivable Knee Exoskeleton”, IEEE Robotics and Automation Letters (RA-L), 2018</p>
+      <p>&nbsp;</p>
+      <p><strong>05/2018</strong><br>
+      </p>
+      <p>&nbsp;</p>
+      <p>Students Jade Ardinez and Winnie mentored by Prof. Hao Su won $50K Kaylie Prize for Entrepreneurship, Zahn
+        Center, City College of New York</p>
+      <p>&nbsp;</p>
+      <p>Lab receives the TechSAge Design Competition Finalist sponsored by Georgia Tech and the National Institute on
+        Disability, Independent Living and Rehabilitation Research</p>
+      <p>&nbsp;</p>
+      <p>Students (Ben Bokser, Valentin Adesman, Michael Sidoo, Diego Monastra, Brian Lui, Richard Wilson) mentored by
+        Prof. Hao Su receive Jack &amp; Shelly Feinstein Best Senior Design Team Award and $10K Zahn startup Competition
+        semi-finalist, 2018 spring</p>
+      <p>&nbsp;</p>
+      <p>Research assistant Brian Lynn received Peter L. Tea Award for undergraduate research</p>
+      <p>&nbsp;</p>
+      <p><strong>04/2018</strong><br>
+      </p>
+      <p><a href="https://mobilityunlimited.org/blog/announcing-our-discovery-awardees">Our lab won Toyota Mobility
+          Challenge Discover Award out of 96 international teams, congratulations to every team member!</a></p>
+      <p>&nbsp;</p>
+      <p></p>
+      <p></p>
+      <p><strong>03/2018</strong><br>
+      </p>
+      <p>Our paper on high torque density actuator was accepted for Dynamic Walking Conference 2018.</p>
+      <p>&nbsp;</p>
+      <p> <strong>02/2018</strong></p>
+      <p>Our paper on soft exo-sheath for hand rehabilitaiton was accepted for IEEE Conference on Soft Robotics 2018.
+      </p>
+      <p>&nbsp;</p>
+      <p><strong>10/2016</strong><br>
+        I am honored to join the <a href="http://www.ieee-ras.org/mechanisms-and-design">Technical Committee on
+          Mechanisms and Design of the IEEE Robotics and Automation Society (RAS)</a> as a Junior Chair.</p>
+      <p>&nbsp;</p>
+      <p><strong>09/2016</strong></p>
+      <p>I was promoted to Associate Editor of the Journal: Frontiers in Robotics and AI</p>
+      <p>&nbsp;</p>
+      <p><strong>06/2016</strong><br>
+        Our paper on soft exosuit control was accepted by International Symposium on Wearable Robotics.</p>
+      <p>&nbsp;</p>
+      <p align="justify"><strong>03/2016</strong><br>
+        I was invited to be an Associate Editor for the International Conference of the IEEE Engineering in Medicine and
+        Biology Society (EMBC).</p>
+      <p align="justify">&nbsp;</p>
+      <p><img src="img/ieee.png" alt="" width="200px"> <br>
+      </p>
+      <p>10/2015, <a
+          href="http://ieeexplore-spotlight.ieee.org/article/mri-guided-robot-the-brains-behind-better-neurosurgery/">MRI-Guided
+          Robot: The Brains Behind Better Neurosurgery?</a> , IEEE Xplore Innovation Spotlight, by IEEE </p>
+      <p>&nbsp;</p>
+      <p><br>
+        <img src="img/ieeeSpectrum.jpg" alt="" width="200px"> <br>
+      </p>
+      <p>07/2015, <a
+          href="https://spectrum.ieee.org/automaton/robotics/medical-robots/inside-an-mri-a-nonmetallic-robot-performs-prostate-surgery">Inside
+          an MRI, a Non-Metallic Robot Performs Prostate Surgery</a> , IEEE Spectrum, by Eliza Strickland</p>
+      <p align="justify">&nbsp;</p>
+      <p align="justify"><strong>11/2014</strong><br>
+        I received the Philips Innovation Transfer Award for contribution to electromechanial system design for clinical
+        simulations.</p>
+      <p align="justify">&nbsp;</p>
+      <p align="justify"><strong>10/2014</strong><br>
+        I was invited to be an Associate Editor for the IEEE International Conference on Robotics and Automation 2015.
+      </p>
+      <p align="justify">&nbsp;</p>
+      <p align="justify"><strong>04/2014</strong><br>
+        I was the conference committee member and organization chair of Catheter Robotics session for ASME Design of
+        Medical Devices Conference 2014.
+        <br><br> -->
+        <!--add lvermaps-->
+      <!-- <p>
+        <center>
+          <div style="display: inline-block;width:300px;">
+            <script type="text/javascript" id="clustrmaps"
+              src="//cdn.clustrmaps.com/map_v2.js?d=JNv8jtILRw9-_QKWkRRov-7bvkttB0kym5GMQCFs8TU&cl=ffffff&w=a"></script>
           </div>
-	  <a href="contact.html"><b>Contact</b></a>
-          <a href="site/index.html">Wiki</a>
-	</div>
-</nav> -->
-
-	
-<div class="content clearfix">
-	
-   <!-- starting page content-->
-   <div id="navpanel_side-placeholder">
-  
-   </div>
-   <script>
-     $(function(){
-       $("#navpanel_side-placeholder").load("navpanel_side.html");
-     });
-     </script>
-  <!-- <aside class="researchaside">
-		<ul class="navigation">
-      <a href="research.html">Research</a></li>
-	<a href="shoulder-exoskeleton.html">Shoulder Exoskeleton</a></li>
-      <id="curr" ><a href="wearable-robots.html">Wearable Robots</a></li>
-      <a href="soft-robots.html">Soft Robots</a></li>
-		  <a href="surgicalrobot.html">Surgical Robot</a></li>
-      <a href="humanoidrobot.html">Humanoid Robot and Computer Vision</a></li>
-      <a href="learning.html">Reinforcement Learning</a></li>
-      <a href="sensoractuators.html">Sensors and Actuators</a></li>
-      <a href="facilities.html">Facilities</a></li>
-      <a href="funding.html">Funding</a></li>
-		</ul>
-		
-	</aside> -->
-
-	<article class="research-detail">
-		<div class="project-detail">
-                        <h3><a href="learning.html">Autonomous Control of Assistive Robots via Reinforcement Learning and Imitation Learning</a></h3>
-                        <p style="text-align: justify">
-				   We presented a novel method to rapidly develop exoskeleton controllers to assist multimodal locomotion without relying on lengthy human-involved experiments - one of the grand challenges of wearable robots that have significantly hindered their broad dissemination and adoption. Our reinforcement learning-based method does not require 
-				   any human tests or handcrafting of control rules. The learned controller can be directly deployed on a portable exoskeleton which immediately reduces energy consumption during walking, running, and stair climbing, achieving the largest energy saving of humans during three locomotion activities so far recorded in the literature, equivalent to 11.9 
-				   kilogram body mass reduction and resulting in athletic performance. <br>
-				   Unlike previous achievements of reinforcement learning that primarily focused on simulation and board games (e.g., AlphaGo), we proposed a new method, namely, data-driven and physics-informed reinforcement learning, to control wearable robots to directly benefit humans.
-				   Our generalizable and easy-to-use method not only works for our robot but can also be applied to a wide variety of assistive devices (e.g., exoskeletons and prostheses) for millions of able-bodied and mobility-impaired individuals. 
-			</p>	
-		        <p><img src="img/Nature Figure 2.png" alt="" width="740" height="400"></p>
-		        <p style="text-align: justify"><br>
-		        </p> 
-
-			
-			<h3><a href="surgicalrobot.html">Semi Autonomous Control of Robot-assisted Surgery and Interventions</a></h3>
-                        <p style="text-align: justify">
-				  We designed a novel portable catheter robot that enables simultaneous translation and rotation of versatile instruments for endovascular intervention (i.e., guide catheters, microcatheters, and guidewires) with a compact architecture. 
-				  State-of-the-art catheter robots suffer from large footprints that pose physical interferences to clinicians during instrument manipulation in robot-assisted procedures. Moreover, these robots lack versatility in their mechanisms, which limits their compatibility with different diameter endovascular instruments utilized in diverse cardiovascular procedures. <br>
-				  Our novel 4-DoF portable and versatile catheter robot enables precise translation and rotation of off-the-shelf instruments within a compact size (250 mm × 350 mm × 250 mm) that is approximately one-tenth the size of the state-of-the-art catheter robots. 
-				  Moreover, our actively adjustable clamping mechanism enables the robot to actuate off-the-shelf instruments with diameters ranging from ∅0.33 mm to ∅3 mm with precise instrument advancement/retraction. The portable and versatile capabilities of the robot enhance its practicality in clinical interventions.
-			</p>	
-	                <p><img src="img/Overview of catheter robot mechatronics design.png" alt="" width="718" height="366"></p>
-                        <p style="text-align: center;">Overview of our 5-DOF catheter robot mechatronics design</p><br>
-                        <p><img src="img/Detailed Design of Guide catheter and Guidewire Actuation Modules.png" alt="" width="700" height="380"></p>
-                        <p style="text-align: center;">Detailed robot design of 2-DOF guide catheters actuation module (upper) and 2-DOF guidewires actuation module (lower)</p>
-                        <p style="text-align: justify;"><br></p>
-
-			
-			<h3><a href="softWearableRobot.html">Soft Exoskeleton for Human Augmentation and Restoration</a></h3>
-			<p><span style="text-align: justify">We </span><span style="text-align: justify">are developing</span> both enabling technologies (i.e. high torque density motors and soft fabric sensors) and robotic systems to augment human capability with wearable robots. Soft exoskeleton is a new design methodology that optimizes both comfort and performance of the users. 
-				We believe that our lightweight and compliant exoskeleton will be new intervention and rehabilitation solutions for both neurological and musculoskeletal disorders, e.g. osteoarthritis and children with cerebral palsy.
-			</p>
-			<p><img src="img/research/kneeExoskeleton3-1.jpg" width="664" height="370">
-				<img src="img/research/tetheredkneeExo-1.jpg" alt="" width="700" height="420">
-			</p>
-			<div class="w3cschool">Figure: (a) Cable-driven knee exoskeleton; (b) Hydraulic hip exoskeleton; (c) Pneumatic ankle exoskeleton; (d) Tethered knee exoskeleton for squatting
-			</div>
-				<p style="text-align: justify"><br>
-			</p>
-			
-			<h3><a href="surgicalrobot.html">MRI-guided Robot for Neurosurgery and Prostate Biopsy</a></h3>
-			<p><span style="text-align: justify">In collaboration with Harvard Medical School, we have developed three generations of MRI-guided prostate intervention robots in collaboration with Johns Hopkins and Brigham and Women's Hospital. The robotic system, designed to improve prostate cancer biopsies, is being tested as part of a larger clinical trial at BWH. The first generation is a cylidrical needle placement robot, the 2nd generation utilized a concentric tube mechanism to actively steer needles, and the third generation deploys a parallel mechanism for angulated needle placement. Prostate cancer is the last form of cancer still diagnosed with blind needle biopsies, so we are working to change that with image-guided technology.</span></p>
-			<p><img src="img/neurosurgery_robot.jpg" alt="" width="720" height="340"></p>
-			<img src="img/corobot-teleoperation.jpg" alt="">
-		  <p style="text-align: justify"><br>
-		  </p>
-		  <h3><a href="sensors.html">High Performance Electric  Motor</a></h3>
-		  <p>High torque density actuator enables a new robot design paradigm - quasi-direct drive, that  significantly improves the bandwidth and transparency of co-robots that interact with human or the enviroment. We developed a novel knee exoskeleton  combining the advantages of a high torque density motor and a bi-directional cable transmission system. The exoskeleton is lightweight and highly backdrivable. Performance evalutation demonstrates that the torque control bandwidth is up to 30Hz. These characteristics enables safe interaction between  users and the exoskeleton.</p>
-		  <p><img src="img/hightorquedensitymotors.png" alt="" width="1845" height="293"></p>
-		  <h3><a href="sensors.html">Fabry-Perot Interferometer Fiber Optic Force Sensor</a></h3>
-		  <p><span style="text-align: justify">Traditional sensors in robotics include force and positioning sensing. However, off-the-shelf sensors are not suiatable for use in MRI due to the potential for image degradation, malfunction, or safety issues. We are evaluating and developing sensors to be used in the MR environment. The current focus is on optical techniques for force and position sensing that do not compromise image quality and will allow for haptic feedback during MRI-guided interventions.</span></p>
-			<img src="img/fpi_force_sensor.jpg" alt=""width="588" height="311">
-		  <p style="text-align: justify">&nbsp;</p>
-		</div>
-		
-		<ul class="relatedpublication">
-			<br>
-			<h3>Academia and Industry Collaborators</h3>
-			<a href="https://irp.nih.gov/pi/diane-damiano"><li>Diane Damiano, M.D., Chief, Rehabilitation Medicine Department, NIH Clinical Center, National Institutes of Health</li></a>
-		    <li>Tom Bulea, Ph.D., Scientist, Rehabilitation Medicine Department, NIH Clinical Center, National Institutes of Health</li>
-			<a href="https://www.columbianeurology.org/profile/joelstein"><li>Joel Stein, MD., Professor, Chair, Rehabilitation and Regenerative Medicine, Columbia University </li></a>
-			<a href="https://www.meche.engineering.cmu.edu/directory/bios/geyer-hartmut.html"><li>Hartmut Geyer, Ph.D., Associate Professor, Mechanical Engineering, Carnegie Mellon University</li></a>
-		    <li>Conor Walsh, Ph.D., School of Engineering and Applied Sciences, Harvard University</li>
-		    <li>Mar Cortes, Rehabilitation Medicine, Cornell University</li>
-			<li>Greogory Fischer, Ph.D., Associate Professor, Mechanical Engineering, Worcester Polytechnic Institute</li>
-			<li>Xuan Liu, Ph.D., Ph.D., Assistant Professor, Electrical and Computer Engineering, New Jersey Insitute of Technology</li>
-		    <li>Richard Foulds, Ph.D., Associate Professor, Biomedical Engineering, New Jersey Insitute of Technology</li>
-			<li>Nobuhiko Hata, Ph.D., Director of Surgical Navigation and Robotics Laboratory, Brigham and Women's Hospital, Harvard Medical School</li>
-		    <li>Junichi Tokuda, Ph.D., Assistant Professor in Radiology, Brigham and Women's Hospital, Harvard Medical School</li>
-		    <li>Clare Tempany, M.D., Professor of Radiology, Chair of Radiology Research, Co-director of the National Center of Image Guided Therapy (NCIGT), Brigham and Women's Hospital, Harvard Medical School</li>
-			<li>Iulian Iordachita, Ph.D., Associate Research Professor, Johns Hopkins University</li>
-			<li>Robert J. Webster III, Ph.D., Associate Professor, Mechanical Engineering, Vanderbilt University</li>
-		    <li>Rober LaDuca, CEO, Duke Imperical Inc., A Minimally Invasive Device Company, Santa Cruz, Califonia, USA</li>
-			<li>Gregory Cole, Ph.D., Senior Research Scientist, ABB Corporate Research Center United States</li>
-			<li>Biao Zhang, Ph.D., Senior Research Scientist, ABB Corporate Research Center United States</li>
-			<li>Samuel Kesner, Ph.D., Director of Corporate Research, Myomo Inc.</li>
-		    <li>Hua Xie, Ph.D., Princinpal Research Scientist, Philips Research North America, Cambridge, Massachusetts, USA</li>
-			<li>Shougang Wang, Ph.D., Marketing Manager, Microchip Inc.</li>
-			<br><br>
-			<img src="img/H V J.jpg" alt="" width="650">
-		</ul>
-		
-	</article>
-	
+        </center>
+      </p>
+      <br>       -->
+      <!-- </p> -->
+    </article>
   </div>
 
-  <footer>
+  <!-- <footer>
     <div class="view2">
 
       <a href="https://engineering.nyu.edu/u/"><img class="ncsulogo" src="img/NYU_logo.png" alt=""></a>
@@ -199,7 +993,7 @@
               src="img/004-youtube.png" alt=""></a>
           <a href="https://twitter.com/ProfHaoSu"><img id="a005twitter" src="img/005-twitter.png" alt=""></a>
         </div>
-        <div class="address">
+        <div class="address"> -->
           <!--Marshak Science Building, Room 705 <br>
 160 Convent AveNew York, NY 10031 <br>
 The City College of New York<br>-->
@@ -208,21 +1002,24 @@ The City College of New York<br>-->
 <!--           Room 3001, Engineering Building III (EB3),<br>1840 Entrepreneur Drive<br>North Carolina State University,
           Raleigh, NC 27695, US -->
 		
-		6 MetroTech Center, Brooklyn, NY 11201<br>
+		<!-- 6 MetroTech Center, Brooklyn, NY 11201<br>
 		New York University
           <br>
           <strong>Email</strong> : <a> hao.su at nyu.edu</a>
-          <br>
+          <br> -->
           <!-- <strong>Phone</strong> : <a>(212)650-5224</a>
 <br> -->
-        </div>
+        <!-- </div> -->
         <!--         <div class="wikibox">
                <p>wiki entrance</p>
          </div>-->
-      </div>
-    </div>
-  </footer>
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </footer> -->
 
 
 </body>
+
 </html>
+
+
